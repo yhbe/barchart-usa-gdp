@@ -14,5 +14,13 @@
   background-color: white;
   height: 575px;
   width: 925px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
+}
+
+
+*{
+  color: black;
 }
