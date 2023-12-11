@@ -9,7 +9,6 @@ function App() {
   const width = 640;
   const height = 400;
   const padding = 60;
-  
   useEffect(() => {
     fetch(
       "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json"
@@ -40,7 +39,15 @@ function App() {
         .attr("transform", `translate(0, ${height - padding})`)
         .call(d3.axisBottom(xScale).tickFormat(d3.timeFormat("%Y")));
 
-      // const yScale = d3.scaleLinear().domain()
+      const yScale = d3.scaleLinear().domain([
+        d3.min(data, (d) => d[1]),
+        d3.max(data, (d) => d[1])
+      ]).range([height - padding, padding])
+
+      svg
+        .append("g")
+        .attr("transform", `translate(${padding}, 0)`)
+        .call(d3.axisLeft(yScale));
 
   }
 
