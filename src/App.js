@@ -33,11 +33,14 @@ function App() {
               .attr("width", width)
               .attr("height", height)
 
-      const xScale = d3.scaleTime().domain([data[0], data[data.length - 1][0]])
+      const xScale = d3.scaleTime().domain([new Date(data[0][0]), new Date(data[data.length - 1][0])]).range([padding, width - padding])
 
-      svg.append("g")
-          .attr("transform", `translate(0, ${height - padding})`)
-          .call(d3.axisBottom(xScale))
+      svg
+        .append("g")
+        .attr("transform", `translate(0, ${height - padding})`)
+        .call(d3.axisBottom(xScale).tickFormat(d3.timeFormat("%Y")));
+
+      // const yScale = d3.scaleLinear().domain()
 
   }
 
