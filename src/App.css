@@ -11,12 +11,18 @@
 }
 
 .App_inner_Container {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   height: 575px;
   width: 925px;
   justify-content: center;
-  align-content: center;
   align-items: center;
+
+  .title{
+    position: absolute;
+    top: 250px;
+  }
 
 }
 
