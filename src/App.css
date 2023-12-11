@@ -26,6 +26,10 @@
 
 }
 
+.bar:hover{
+  fill: white
+}
+
 
 *{
   color: black;
