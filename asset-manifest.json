@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/barchart-usa-gdp/static/css/main.601ba48c.css",
+    "main.js": "/barchart-usa-gdp/static/js/main.e967a2bd.js",
+    "static/js/787.5a63d318.chunk.js": "/barchart-usa-gdp/static/js/787.5a63d318.chunk.js",
+    "index.html": "/barchart-usa-gdp/index.html",
+    "main.601ba48c.css.map": "/barchart-usa-gdp/static/css/main.601ba48c.css.map",
+    "main.e967a2bd.js.map": "/barchart-usa-gdp/static/js/main.e967a2bd.js.map",
+    "787.5a63d318.chunk.js.map": "/barchart-usa-gdp/static/js/787.5a63d318.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.601ba48c.css",
+    "static/js/main.e967a2bd.js"
+  ]
+}
